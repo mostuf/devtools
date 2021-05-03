@@ -4,6 +4,20 @@ body{
     text-align: justify;
     font-family: Roboto;
     background-color: rgba(64,64,64,1);
+    overflow: auto;
+    scrollbar-color: rgba(255, 255, 255, 0.1) #32383e;
+    scrollbar-width: 1rem;
+}
+
+body::-webkit-scrollbar
+{
+    width: 20px;
+    background-color: #32383e;
+}
+
+body::-webkit-scrollbar-thumb 
+{
+    background: rgba(255, 255, 255, 0.1);
 }
 
 h2{
@@ -25,7 +39,7 @@ main{
     margin-top:60px;
 }
 
-nav #menu .nav-item:hover{
+nav #menu .nav-item :hover{
     background-color: rgba(255,255,255,0.1);
 }
 
@@ -34,7 +48,7 @@ nav #menu .nav-item{
 } 
 
 nav #menu .nav-item a{
-    color: white;
+    color: wihte;
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -166,7 +180,7 @@ nav #menu .nav-item .logo{
 }
 
 .product:hover{
-    box-shadow: 0px 0px 20px 2px rgb(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 20px 4px rgb(0, 0, 0, 0.7);
     transition: box-shadow 0.4s;
 }
 
@@ -211,7 +225,7 @@ footer{
 
 footer ul{
     list-style-type: none;
-    padding-left: 0px;
+    /*padding-left: 0px;*/
 }
 
 footer li{
@@ -243,7 +257,7 @@ footer a:hover{
     }
 
     .product{
-        width: 100%;
+        width: 30%;
     }
 }
 
